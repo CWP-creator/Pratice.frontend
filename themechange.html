@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    function myfunction() {
+        var allElement = document.getElementById("all");
+        allElement.style.backgroundColor = "black";
+        var textElements = allElement.getElementsByTagName("p");
+        for (var i = 0; i < textElements.length; i++) {
+            textElements[i].style.color = "white";
+        }
+        var navElement = document.getElementById("nabb");
+        navElement.style.backgroundColor = "white";
+        var navLinks = navElement.getElementsByTagName("a");
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].style.color = "black";
+        }
+    }
+    </script>
+</head>
+<body id="all">
+    <ul id="nabb" class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <div class="faf">
+        <button>
+            <i onclick="myfunction()" style="font-size:24px" class="fa">&#xf0c9;</i>
+        </button>
+        <div id="demo" class="down">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="a_gaudmire_1.png" alt="Game 1">
+            <p class="txt">This is good</p>
+        </div>
+        <!-- Repeat the card div as needed -->
+    </div>
+    <div class="buth">
+        <button onclick="myfunction()">
+            Dark Mode
+        </button>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>S5</h3>
+            <p>Our company is very good</p>
+            <ul class="socials">
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S5. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<div id="crad" class="card">
+    <img src="a_gaudmire_1.png" alt="Game 1">
+    <p  class="txt">this os good</p>
+</div>
